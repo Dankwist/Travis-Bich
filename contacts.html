@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Bich</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="Cactus Jack Logo PNG Vector (PDF) Free Download.jpeg.jpg" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+      <script src="./js/models.js" defer></script>
+      <script src="./js/cart.js" defer></script>
+      <script src="./js/cart-ui.js" defer></script>
+      <script src="./js/header.js" defer></script>
+</head>
+<body>
+    
+  <header class="nav">
+    <div class="nav-left">
+      <span><a href="./index.html">MAIN</a></span>
+      <span><a href="./music.html">MUSIC</a></span>
+      <span id="authHeader"><a href="./auth.html">LOGIN</a></span>
+  </div>
+    <div class="nav-logo">
+        <img src="BOLD_1500px-Cactus_Jack_Records_-_Logo.webp" alt="Лого">
+    </div>
+
+    <div class="nav-right">
+      <label class="burger-label" for="cart-toggle">
+        <span>CART (<span id="headerCartCount">0</span>)</span>
+        <div class="burger-lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+    </div>
+  </header>
+
+ <input type="checkbox" id="cart-toggle" hidden>
+<label for="cart-toggle" class="cart-overlay"></label>
+
+
+
+<aside class="cart-menu">
+   <label for="cart-toggle" class="cart-close">CLOSE ×</label>
+      <h3>CART (<span id="cartCount">0</span> ITEM)</h3>
+
+    <div id="cartItems" class="cart-items">
+        <p>NO ITEMS YET.</p>
+    </div>
+
+    <div class="cart-bottom">
+        <p id="cartTotal">SUBTOTAL $0</p>
+       <button id="checkoutBtn" class="checkout-btn">CHECKOUT</button>
+    </div>
+</aside>
+
+<input type="checkbox" id="help" hidden>
+
+
+
+<main class="page">
+   <p>ALL SALES FINAL. NO RETURNS, EXCHANGES, OR MODIFICATIONS TO YOUR ORDER AFTER PLACED.</p>
+  <p>FOR CUSTOMER SERVICE PLEASE CLICK BELOW:</p>
+  <label for="help" class="btn">CONTACT CUSTOMER SERVICE</label>
+  <p>YOU WILL RECEIVE TRACKING ONCE THE ORDER SHIPS.</p>
+   <p>ORDERS WITH MULTIPLE ITEMS WILL HAVE EACH ITEM INDIVIDUALLY SHIPPED AS RECEIVED AT THE WAREHOUSE IN ORDER TO GET YOU YOUR ORDER AS QUICKLY AS POSSIBLE. SHIPPING EACH ITEM SEPARATELY ALLOWS US TO DELIVER YOUR ORDER IN THE MOST TIME EFFICIENT MANNER.
+</p>
+<p>REFUSED PACKAGES WILL BE CONSIDERED FORFEITED AND ARE NOT ELIGIBLE FOR REFUND OR CREDIT.</p>
+<p>WE ARE NOT RESPONSIBLE FOR ANY LOST, STOLEN OR DAMAGED SHIPMENTS. CUSTOMERS ARE RESPONSIBLE FOR PAYING ADDITIONAL SHIPPING AND HANDLING FEES TO HAVE THE ORDER RE-SHIPPED, IF AVAILABLE.</p>
+<p>THE BUYER ASSUMES ALL RESPONSIBILITIES OF CLAIMS MADE WITH THE SHIPPING CARRIER. PLEASE CONTACT CUSTOMER SERVICE WITH ANY QUESTIONS REGARDING CARRIER CLAIMS.
+ </p>
+ <p>IN ORDER TO PROVIDE THE BEST CUSTOMER SERVICE, ANY CONCERNS REGARDING ORDERS MUST BE RECEIVING IN WRITING WITHIN 7 DAYS WITHIN THE DELIVERY OF THE ORDER.</p>
+</main>
+
+
+
+<label for="help" class="overlay"></label>
+
+<div class="popup">
+  <div class="popup-box">
+    <label for="help" class="close">×</label>
+    <h3>HELP</h3>
+
+    <form class="form">
+      <input type="text" placeholder="Your name">
+      <input type="email" placeholder="Email *" required>
+      <input type="text" placeholder="Subject *" required>
+      <input type="text" placeholder="Order number *" required>
+      <select required>
+        <option value="">Inquiry reason *</option>
+        <option>Shipping</option>
+        <option>Return</option>
+        <option>Payment</option>
+      </select>
+      <textarea rows="5" placeholder="Description *" required></textarea>
+      <button type="submit" class="btn dark">Send</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+    <a href="contacts.html">CONTACT CUSTOMER SERVICE</a>
+    <a href="terms.html">TERMS</a>
+    <a href="policy.html">DON'T SELL MY PERSONAL INFORMATION</a>
+  </footer>
+  
+</body>
+</html>

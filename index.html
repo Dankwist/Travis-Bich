@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travis Bich</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Cactus Jack Logo PNG Vector (PDF) Free Download.jpeg.jpg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="./js/models.js" defer></script>
+<script src="./js/cart.js" defer></script>
+<script src="./js/cart-ul.js" defer></script>
+<script src="./js/header.js" defer></script>
+<script src="./js/main.js" defer></script>
+</head>
+<body>
+
+<input type="checkbox" id="cart-toggle" hidden />
+
+<header class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-left">
+    <span><a href="./index.html">MAIN</a></span>
+    <span><a href="./music.html">MUSIC</a></span>
+     <span id="authHeader"><a href="./auth.html">LOGIN</a></span>
+  </div>
+
+  <div class="nav-logo">
+    <img src="BOLD_1500px-Cactus_Jack_Records_-_Logo.webp" alt="Cactus Jack logo" />
+  </div>
+
+        <div class="nav-right">
+    <label class="burger-label" for="cart-toggle" aria-controls="cart-drawer" aria-expanded="false">
+      <span>CART (<span id="headerCartCount">0</span>)</span>
+      <div class="burger-lines" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </label>
+  </div>
+</header>
+
+<aside id="cart-drawer" class="cart-menu" aria-hidden="true">
+    <label for="cart-toggle" class="cart-close">CLOSE ×</label>
+      <h3>CART (<span id="cartCount">0</span> ITEM)</h3>
+
+    <div id="cartItems" class="cart-items">
+        <p>NO ITEMS YET.</p>
+    </div>
+
+    <div class="cart-bottom">
+        <p id="cartTotal">SUBTOTAL $0</p>
+       <button id="checkoutBtn" class="checkout-btn">CHECKOUT</button>
+    </div>
+</aside>
+
+<label for="cart-toggle" class="cart-overlay"></label>
+
+<input type="checkbox" id="cookies-toggle" hidden>
+
+<div class="cookies-banner">
+  <div class="cookies-content">
+    <p>This site uses cookies to enhance your experience. </p>
+    <div class="cookies-actions">
+      <label for="cookies-toggle" class="accept">Accept</label>
+    </div>
+  </div>
+</div>
+
+
+  <main class="hero-wrapper">
+    <section class="hero">
+      <div class="shoe-section">
+        <a href="./карточки хтмл/airjordan.html" target="_blank" class="shoe-link" aria-label="Open AIR JORDAN 1 LOW OG SP FRAGMENT">
+          <video class="shoe-media" src="45d191c27a5444d6890819e493af77ac.HD-1080p-7.2Mbps-61931614.mp4"
+                 autoplay muted loop playsinline></video>
+        </a>
+      </div>
+
+      <div class="hero-title-small">CACTUS JACK</div>
+      <h1 class="hero-title-main">AIR JORDAN 1 LOW OG SP "FRAGMENT"</h1>
+      <div class="hero-soon"><a href="./карточки хтмл/airjordan.html">BUY</a></div>
+    </section>
+  </main>
+
+  <div class="catalog-controls">
+  <select id="sortSelect">
+    <option value="default">DEFAULT</option>
+    <option value="price-asc">PRICE LOW TO HIGH</option>
+    <option value="price-desc">PRICE HIGH TO LOW</option>
+    <option value="title-asc">A-Z</option>
+  </select>
+</div>
+
+  <section class="cards-all" id="productsList" aria-label="Products">
+  </section>
+
+  <ul class="slider" aria-label="Albums">
+    <li class="item item1"><span>Rodeo</span></li>
+    <li class="item item2"><span>Astroworld</span></li>
+    <li class="item item3"><span>Utopia</span></li>
+    <li class="item item4"><span>JackBoys 2</span></li>
+  </ul>
+
+  <footer>
+    <a href="contacts.html">CONTACT CUSTOMER SERVICE</a>
+    <a href="terms.html">TERMS</a>
+    <a href="policy.html">DON'T SELL MY PERSONAL INFORMATION</a>
+  </footer>
+</body>
+</html>
